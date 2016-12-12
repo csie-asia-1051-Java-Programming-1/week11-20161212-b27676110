@@ -24,7 +24,7 @@ public class hw03 {
 				bTree.addNode(v1);
 			}
 			bTree.inOrder(bTree.root);
-			scn.nextLine().charAt(0);
+			contChar=scn.next().charAt(0);
 		}
 
 	}
