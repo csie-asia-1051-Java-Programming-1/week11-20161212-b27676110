@@ -32,7 +32,7 @@ public class BinTree {
 
 	public void inOrder(Node node) {
 		if (node.getLeftNode() != null) {
-			inOrder(node.getVal());
+			inOrder(node.getLeftNode());
 		}
 		System.out.print(node.getVal() + "\t");
 		if (node.getRightNode() != null) {
@@ -40,7 +40,6 @@ public class BinTree {
 		}
 	}
 }
-
 class Node {
 	private Node left, right;
 	private float data;
@@ -66,5 +65,9 @@ class Node {
 	public void addLeftNode(float v1) {
 		this.left = new Node(v1);
 	}
+	public void addRightNode(float v1){
+		this.right = new Node(v1);
+	}
 
 }
+
